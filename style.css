@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: tahoma;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* MAIN CONTAINER DESIGN */
+
+.container {
+  max-width: 30rem;
+  background-color: purple;
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+.container :is(h1) {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.container :is(.input__group) {
+  position: relative;
+  display: flex;
+}
+
+.container :is(input) {
+  width: 100%;
+  padding: 0.8rem 3rem 0.8rem 0.8rem;
+  border: none;
+  outline-width: 0;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.container :is(.copyedit__btn),
+.container :is(.copy__btn) {
+  position: absolute;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: inherit;
+  background-color: purple;
+  color: #fff;
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 2px;
+}
+.container :is(.copyedit__btn) {
+  color: lime;
+}
+
+.container :is(.generate__btn) {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  outline-width: 0;
+  outline: none;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: rgba(226, 5, 226, 0.988);
+  color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: flex !important;
+}

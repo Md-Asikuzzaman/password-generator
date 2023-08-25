@@ -1,0 +1,13 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "nothing",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
